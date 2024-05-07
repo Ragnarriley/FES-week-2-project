@@ -16,7 +16,22 @@ div {
     unicode-bidi: isolate;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    align-items: center;
+}
+
+.nav__link {
+    padding-right: 10px;
+}
+
 nav, ul, li {
+    display: flex;
     font-weight: 600;
 }
 
@@ -27,6 +42,14 @@ nav, ul, li, a {
     list-style: none;
     color: #242424;
     letter-spacing: 0.025em;
+}
+
+.btn__menu {
+    display: none;
+}
+
+.menu__backdrop {
+    display: none;
 }
 
 .blob1 {
@@ -85,6 +108,7 @@ svg {
 .email__text--area {
     padding: 22px 0 22px 32px;
     width: 100%;
+    max-width: 200px;
     border-radius: 100px;
     border: 2px solid #e5e7eb;
     font-size: 16px;
@@ -149,6 +173,10 @@ section {
 
 svg {
     display: block;
+    max-height: 400px;
+    width: 100%;
+    max-width: 200px;
+    align-items: end;
 }
 
 .features {
@@ -173,10 +201,11 @@ svg {
     color: rgb(36 62 99);
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .gray__description--center {
     font-size: 16px;
     line-height: 26px;
+}
 }
 
 .gray__description--center {
@@ -194,9 +223,10 @@ svg {
     margin: 0 auto;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .service {
     width: calc(100% / 2);
+}
 }
 
 .service {
@@ -237,15 +267,16 @@ svg {
     color: rgb(36 62 99);
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .quality-work__info p {
     width: 90%;
 }
-
-@media (max-width: 992px)
+}
+@media (max-width: 992px){
 .gray__description--start {
     font-size: 16px;
     line-height: 26px;
+}
 }
 .gray__description--start {
     font-weight: 500;
@@ -319,6 +350,7 @@ button {
     padding-left: 60px;
 }
 
+
 .steps__info h1 {
     text-align: start;
     font-size: 18px;
@@ -340,15 +372,6 @@ button {
 .steps__info ul {
     display: flex;
     flex-direction: column;
-}
-
-nav, ul, li, a {
-    text-decoration: none;
-    font-size: 14px;
-    transition: ease all 0.3s;
-    list-style: none;
-    color: #242424;
-    letter-spacing: 0.025em;
 }
 
 .steps__info li {
@@ -394,11 +417,11 @@ nav, ul, li, a {
     letter-spacing: 0.025em;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .values__description h2 {
     font-size: 36px;
 }
-
+}
 .values__description h2 {
     margin-top: 16px;
     color: #243e63;
@@ -406,12 +429,12 @@ nav, ul, li, a {
     font-weight: 900;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .gray__description--start {
     font-size: 16px;
     line-height: 26px;
 }
-
+}
 .gray__description--start {
     font-weight: 500;
     font-size: 18px;
@@ -422,13 +445,14 @@ nav, ul, li, a {
     margin: 24px 0px 36px 0px;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .values__list {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+}
 .values__list {
     display: flex;
 }
@@ -460,16 +484,17 @@ nav, ul, li, a {
     color: #243e63;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .values__button--p {
     font-size: 16px;
 }
+}
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .values__button--p {
     font-size: 14px;
 }
-
+}
 .values__button--p {
     text-align: start;
     margin-top: 16px;
@@ -552,12 +577,12 @@ button {
 .pricing__description p {
     max-width: 550px;
 }
-@media (max-width: 992px) 
+@media (max-width: 992px) {
 .gray__description--center {
     font-size: 16px;
     line-height: 26px;
 }
-
+}
 
 .gray__description--center {
     font-weight: 500;
@@ -685,7 +710,7 @@ button {
     padding: 20px 75px;
     border: none;
     font-size: 14px;
-    background-color: white;
+    background-color: peachpuff;
     font-weight: 600;
     color: #6415ff;
     margin-top: 24px;
@@ -732,13 +757,14 @@ button {
 
 .star__description {
     margin-top: -24px;
+    display: flex;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .testimonial__para {
     font-size: 14px;
 }
-
+}
 .testimonial__para {
     font-size: 16px;
     margin: 16px 0px 40px 0px;
@@ -772,14 +798,14 @@ button {
     transform: matrix(1, 0, 0, 1, 150, -275);
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .contact__us--row {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
+}
 .contact__us--row {
     display: flex;
     justify-content: space-between;
@@ -793,6 +819,7 @@ button {
 .footer__links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .horizontal__line {
@@ -808,3 +835,28 @@ button {
     align-items: center;
 }
 
+.footer__title {
+    display: flex;
+}
+
+#footer__link--list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.social__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+.logo__company--links {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
